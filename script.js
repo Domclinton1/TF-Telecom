@@ -119,3 +119,7 @@ function wpp2() {
     var click = document.querySelectorAll('.cta')
     window.open("https://wa.me/5531992616974?text=Ola,%20quero%20fazer%20um%20orçamento%20sobre um projeto...")
 }
+function email(){
+    var click = document.querySelectorAll('email')
+    window.location.href = 'mailto:fctelecom24@gmail.com';
+}
