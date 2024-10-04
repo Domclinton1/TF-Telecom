@@ -737,6 +737,7 @@ body {
     right: 0;
     z-index: 99;
     cursor: pointer;
+    display: none;
   }
   .btn-whatsapp img {
     max-width: 74px;
