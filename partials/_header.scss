@@ -1,0 +1,195 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 10px 20px 0 0;
+    color: $logo-color-1;
+    background-color: $logo-color-2;
+    width: 100%;
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    transition: top 0.3s ease-in-out; /* Adiciona suavidade ao mostrar/esconder o menu */
+
+    .logo {
+        img {
+            width: 150px;
+        }
+    }
+
+    .nav {
+        display: flex;
+        gap: 1.8rem;
+        li {
+            list-style: none;
+            cursor: pointer;
+        }
+    }
+
+    .cta {
+        background: linear-gradient(90deg, #D4A157, #A56B2B);
+        width: 200px;
+        height: 25px;
+        color: $logo-color-2;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        border-radius: 5px;
+        cursor: pointer;
+        gap: 1rem;
+        font-size: 18px;
+    }
+
+    .hamburger {
+        display: none;
+        flex-direction: column;
+        cursor: pointer;
+        gap: 5px;
+    }
+
+    .hamburger span {
+        width: 25px;
+        height: 3px;
+        background-color: #333;
+    }
+}
+
+/* Corrige o problema de sobreposição adicionando espaçamento no topo do body */
+body {
+    padding-top: 80px; /* Ajuste este valor de acordo com a altura do seu menu */
+}
+
+.hero-container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 40px;
+    gap: 1.8rem;
+    background-image: linear-gradient(to top, rgba(6, 18, 30, 0.1), $logo-color-2), url(../assets/banner/fibra-otica-2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 80vh;
+
+    h1, h2 {
+        width: 60%;
+        color: $logo-color-1;
+    }
+
+    .cta {
+        background: linear-gradient(90deg, #D4A157, #A56B2B);
+        width: 220px;
+        height: 25px;
+        color: $logo-color-2;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        border-radius: 5px;
+        cursor: pointer;
+        display: flex;
+        gap: 1rem;
+        font-size: 18px;
+    }
+    .logo-hero {
+        width: 50%;
+        img {
+            width: 100%;
+        }
+    }
+    .hero-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 1.8rem;
+        h1,h2{
+            width: 100%;
+        }
+    }
+
+}
+
+/* Estilo para telas menores */
+@media screen and (max-width: 768px) {
+    .hamburger {
+        display: flex; /* Exibe o ícone de hambúrguer em telas pequenas */
+    }
+
+    .nav {
+        display: none;
+        position: absolute;
+        top: 160px; /* Ajuste conforme necessário para alinhar corretamente */
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.9); /* Fundo escuro com opacidade */
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        gap: 1.8rem;
+        padding: 20px 0;
+    }
+
+    .nav.active {
+        display: flex; /* Exibe o menu quando ativo */
+    }
+
+    .cta {
+        width: 150px;
+    }
+    header {
+        max-width: 768px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .header {
+        max-width: 450px;
+        width: 100%;
+        padding: 10px 20px 0 0;
+        .logo img {
+            width: 150px;
+        }
+
+        .nav {
+            max-width: 450px;
+            width: 100%;
+            li {
+                list-style: none;
+                cursor: pointer;
+            }
+        }
+
+        .cta {
+            width: 200px;
+            height: 25px;
+        }
+    }
+
+    .hero-container {
+        max-width: 450px;
+        width: 100%;
+        h1 {
+            width: 100%;
+            font-size: 20px;
+        }
+
+        h2 {
+            width: 100%;
+            font-size: 15px;
+        }
+
+        .cta {
+            width: 200px;
+            height: 25px;
+        }
+    }
+    .hamburger {
+        display: flex; /* Exibe o ícone de hambúrguer em telas pequenas */
+        color: #D4A157;
+    }
+}

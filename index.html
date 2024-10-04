@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <link rel="icon" href="./assets/icons/logo-sem-fundo-1.png">
+    <link rel="stylesheet" href="style.css">
+
+    <title>TF Telecomunicações</title>
+    
+</head>
+<body>
+    <header>
+       <div class="header menuPai">
+            <div class="logo" data-aos="flip-down" data-aos-delay="500" data-aos-duration="1000">
+                <img src="./assets/icons/logo-sem-fundo-1.png" alt="">
+            </div>
+            <div class="nav" id="menuFilho">
+                <li onclick="inicio()">Início</li>
+                <li onclick="services()">Serviços</li>
+                <li onclick="clientes()">Clientes</li>
+                <li onclick="sobre()">Sobre Nós</li>
+                <li onclick="contato()">Contato</li>
+            </div>
+            <div class="cta">Entre em Contato <i class="fa-brands fa-whatsapp"></i></div>
+            <div class="hamburger" id="menuHamburger" onclick="toogleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+       </div>
+        
+        <main class="hero-container" id="inicio">
+
+            <div class="logo-hero" data-aos="flip-up"
+            data-aos-anchor-placement="center-bottom" data-aos-duration="1000">
+                <img src="./assets/icons/logo-sem-fundo-1.png" alt="">
+            </div>
+            
+            <div class="hero-text">
+                <h1>Soluções de Telecomunicações Inovadoras e Eficientes para Conectar seu Negócio</h1>
+                <h2>Instalação de banda larga, VoIP, manutenção de redes CTOs e backbone com expertise e qualidade garantidas</h2>
+                <div class="cta">
+                    Solicite Orçamento <i class="fa-brands fa-whatsapp"></i>
+                </div>
+            </div>
+        </main>
+    </header>
+    <main class="conteudo">
+        <section class="services" id="services">
+            <h1>Nossos Serviços Especializados</h1>
+            <em>Com 4 anos de experiência no mercado de telecomunicações, oferecemos uma vasta gama de serviços, desde instalação até manutenção de redes de alta complexidade.</em>
+            <div class="service-box">
+                <div class="info-service">
+                    <div class="img"><img src="./assets/icons/voip-1.png" alt=""></div>
+                    <div class="service-text">
+                        <h2>Instalação de Banda Larga e VoIP</h2>
+                        <P>Implementamos soluções de internet banda larga e sistemas de telefonia VoIP com a mais alta eficiência para empresas de todos os tamanhos.</P>
+                    </div>
+                    <div class="cta">
+                        Solicite Orçamento <i class="fa-brands fa-whatsapp"></i>
+                    </div>
+                </div>
+                <div class="info-service">
+                    <div class="img">
+                        <img src="./assets/icons/redes-1.png" alt="">
+                    </div>
+                    <div class="service-text">
+                        <h2>Manutenção de Redes CTOs e Backbone</h2>
+                    <p>
+                        Garantimos a estabilidade e a performance das suas redes com manutenção especializada em CTOs e backbones.
+                    </p>
+                    </div>
+                    <div class="cta">
+                        Solicite Orçamento <i class="fa-brands fa-whatsapp"></i>
+                    </div>
+                </div>
+                <div class="info-service">
+                    <div class="img">
+                        <img src="./assets/icons/rack-1.png" alt="">
+                    </div>
+                    <div class="service-text">
+                        <h2>Montagem de Racks</h2>
+                    <p>
+                        Organize e mantenha seus equipamentos de rede em perfeita ordem com nossa montagem de racks profissionais.
+                    </p>
+                    </div>
+                    <div class="cta">
+                        Solicite Orçamento <i class="fa-brands fa-whatsapp"></i>
+                    </div>
+                </div>
+                <div class="info-service">
+                    <div class="img">
+                        <img src="./assets/icons/redes-2.png" alt="">
+                    </div>
+                    <div class="service-text">
+                        <h2>Implantação de Redes</h2>
+                        <p>
+                            Implementamos infraestruturas de rede robustas e seguras, preparadas para lidar com a demanda crescente de dados da sua empresa.
+                        </p>
+                    </div>
+                    <div class="cta">
+                        Solicite Orçamento <i class="fa-brands fa-whatsapp"></i>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+        <section class="prova-social" id="clientes">
+            <h2>Nossos Clientes Confiam na Nossa Experiência</h2>
+
+            <div class="testimonials">
+                <div class="feedback">
+                   <div class="img"> <img src="./assets/images/perfil-9.jpg" alt=""></div>
+                    <div class="feedback-content">
+                        <p><strong>Patrícia S., Diretora de TI</strong>
+                        </p>
+                        <div class="stars">
+                            <i class="fa-solid fa-star">
+                            </i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <em>
+                            Desde que contratamos a TF Telecomunicações para a instalação da nossa rede de fibra óptica, nossa conectividade nunca esteve tão estável. A equipe é extremamente profissional e solucionou tudo de forma rápida e eficiente. Estamos tranquilos sabendo que nossa rede está em ótimas mãos.
+                        </em>
+                    </div>
+                </div>
+                <div class="feedback">
+                    <div class="img"><img src="./assets/images/perfil-8.jpg" alt=""></div>
+                    <div class="feedback-content">
+                        <p><strong>Fernanda M., Gerente de Operações</strong></p>
+                        <div class="stars">
+                            <i class="fa-solid fa-star">
+                            </i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <em>
+                            Tivemos problemas recorrentes de conectividade e instabilidade na nossa rede até conhecermos a TF Telecomunicações. A equipe identificou e corrigiu todos os problemas no backbone, garantindo uma performance excelente. Recomendamos fortemente pelos resultados e pelo atendimento impecável.
+                        </em>
+                    </div>
+                </div>
+                <div class="feedback">
+                   <div class="img"> <img src="./assets/images/perfil-7.jpg" alt=""></div>
+                    <div class="feedback-content">
+                        <p><strong>Gabriel L., Coordenador de TI</strong></p>
+                        <div class="stars">
+                            <i class="fa-solid fa-star">
+                            </i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <em>
+                            Excelente serviço! A equipe da TF Telecomunicações é altamente capacitada e atendeu todas as nossas necessidades de instalação de VoIP e redes. O atendimento ao cliente também é de primeira — sempre prontos para responder qualquer dúvida com agilidade. Não poderíamos estar mais satisfeitos.
+                        </em>
+                    </div>
+                </div>
+                <div class="feedback">
+                    <div class="img">
+                        <img src="./assets/images/perfil-3.jpg" alt="">
+                    </div>
+                    <div class="feedback-content">
+                        <p><strong>Lucas P., CEO de Soluções Corporativas</strong></p>
+                        <div class="stars">
+                            <i class="fa-solid fa-star">
+                            </i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <em>
+                            A TF Telecomunicações nos ajudou a modernizar toda a infraestrutura de telecomunicações da nossa empresa, desde a instalação de banda larga até a montagem de racks e manutenção das redes. O trabalho foi feito dentro do prazo e com um padrão de qualidade superior. Nunca tivemos um serviço tão confiável.
+                        </em>
+    
+                    </div>
+                </div>
+                <div class="feedback">
+                    <div class="img">
+                        <img src="./assets/images/perfil-1.png" alt="">
+                    </div>
+                    <div class="feedback-content">
+                        <p><strong>Carlos R., Diretor de Projetos
+                        </strong></p>
+                        <div class="stars">
+                        <i class="fa-solid fa-star">
+                        </i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                        <em>
+                            Profissionais muito qualificados! A TF Telecomunicações cuidou da implantação da nossa rede de ponta a ponta, desde a parte de cabeamento até as configurações avançadas. Além disso, o suporte técnico é excepcional, sempre prontos para nos atender com rapidez e eficiência.
+                        </em>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="beneficios">
+            <h2>Por Que Escolher Nossa Empresa?</h2>
+            <p>Com anos de experiência e uma equipe altamente capacitada, entregamos soluções inovadoras que otimizam a conectividade do seu negócio.</p>
+            <div class="ul-beneficios">
+                <ul class="ul-pai">
+                    <div class="lista">
+                        <li data-aos="fade-left"><strong>Equipe Altamente Qualificada:</strong> Profissionais com vasta experiência em telecomunicações.</li>
+                        <li data-aos="fade-left"><strong>Soluções Sob Medida:</strong> Adaptamos nossos serviços às necessidades específicas de cada cliente.</li>
+                        <li data-aos="fade-left"><strong>Atendimento Rápido:</strong> Resolvemos problemas com agilidade para minimizar o tempo de inatividade.</li>
+                        <li data-aos="fade-left"><strong>Tecnologia de Ponta:</strong> Utilizamos equipamentos e técnicas avançadas para garantir a máxima performance.</li>
+                    </div>
+                    <div class="img">
+                        <img src="./assets/images/man-1.png" alt=""> 
+                    </div>   
+                </ul>
+                
+            </div>
+        
+        </section>
+        <section class="sobre" id="sobre">
+            <h2>4 Anos de Experiência e Excelência no Mercado de Telecomunicações</h2>
+            <p>
+                Desde 2019, nossa missão é entregar soluções tecnológicas de alto desempenho para conectar negócios de forma rápida, segura e eficiente. Nossa equipe especializada está sempre pronta para atender às mais variadas demandas do setor de telecom.
+            </p>
+
+            <div class="sobre-content">
+                <ul class="diferencial-lista">
+                    <h3>Diferenciais:</h3>
+
+                    <li data-aos="fade-down" data-aos-duration="500">Foco em Relacionamento e Parcerias de Longo Prazo <i class="fa fa-check"></i></li>
+
+                    <li data-aos="fade-down" data-aos-duration="700">Tecnologia de Ponta e Equipamentos Modernos <i class="fa fa-check"></i></li>
+
+                    <li data-aos="fade-down" data-aos-duration="900">Mais de 586.528 km² de redes implementadas <i class="fa fa-check"></i></li>
+
+                    <li data-aos="fade-down" data-aos-duration="1100">Experiência de Mercado e Credibilidade <i class="fa fa-check"></i></li>
+
+                    <li data-aos="fade-down" data-aos-duration="1500">Manutenção de grandes infraestruturas <i class="fa fa-check"></i></li>
+                    
+                    
+                    <li data-aos="fade-down" data-aos-duration="1700">Clientes em toda Minas Gerais. <i class="fa fa-check"></i></li>
+
+                </ul>
+                <div class="sobre-img">
+                    
+                </div>
+            </div>
+        </section>
+        <section class="location">
+            <h2>Nossa Localização</h2>
+            <p>Nosso endereço comercial se localiza na <a href="https://maps.app.goo.gl/tZTvPsEJXxECdiKP8" target="_blank"><strong>Rua Geraldo Ferreira Teles, N° 405, Mantiqueira - Belo Horizonte, Minas Gerais.</strong></a></p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3754.0662672060166!2d-43.990846928463455!3d-19.794787493342184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa68e4dd342b407%3A0x373db7d287b011e4!2sR.%20Geraldo%20Telles%2C%20405%20-%20Mantiqueira%2C%20Belo%20Horizonte%20-%20MG%2C%2031660-290!5e0!3m2!1spt-BR!2sbr!4v1728050807597!5m2!1spt-BR!2sbr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+        <section class="contato" id="contato">
+            <h2>Entre em Contato</h2>
+           <div class="contatos">
+            <ul class="contato-lista">
+                <li>WhatsApp <i class="fa-brands fa-whatsapp "></i></li>
+                <li>Telefone <i class="fa fa-phone"></i></li>
+                <li>Email <i class="fa fa-envelope"></i></li>
+            </ul>
+            <ul class="contato-lista">
+                <li>Instagram <i class="fa-brands fa-instagram"></i></li>
+                <li>Facebook <i class="fa-brands fa-facebook"></i></li>
+                <li>WhatsApp <i class="fa-brands fa-whatsapp"></i></li>
+            </ul>
+           </div>
+        </section>
+    </main>
+    <footer>
+        <div class="empresa-info">
+            <li><i class="fa fa-envelope"></i> fctelecom24@gmail.com</li>
+            <li><i class="fa-brands fa-whatsapp"></i>(31) 99771-5545</li>
+            <li><i class="fa-brands fa-whatsapp"></i>(31) 99261-6974</li>
+            <li><i class="fa-brands fa-instagram"></i>@tftelecom</li>
+            
+        </div>
+        <hr>
+        <div class="empresa-info">
+            <p>(31) 99771-5545 | (31) 99261-6974</p>
+            <p>CNPJ: 42.532.912/0001-54</p>
+            <P>&copy; TF Telecomunicações  - Todos os direitos reservados</P>
+            <em>Developed by <span>Dom Link Soluções Digitais</span></em>
+        </div>
+        
+    </footer>
+    <a  class="btn-whatsapp" target="_blank" data-aos="zoom-in-up" data-aos-delay="400">
+        <img  src="./assets/icons/whatssapp.svg" alt="Botão whatsapp">
+        <span class="tooltip-text">Agende seu orçamento.</span>
+    </a>
+    <script src="script.js"></script>
+    <script>
+        AOS.init();
+      </script>
+</body>
+</html>
