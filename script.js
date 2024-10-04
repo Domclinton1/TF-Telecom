@@ -61,7 +61,7 @@ window.addEventListener('scroll', function() {
     let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
     if (scrollTop > lastScrollTop) {
         // Scrolling down
-        menuPai.style.top = "-100px";
+        menuPai.style.top = "-170px";
     } else {
         // Scrolling up
         menuPai.style.top = "0";
