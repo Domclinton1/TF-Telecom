@@ -1,4 +1,4 @@
-/*
+
 // Seleciona os elementos
 const hamburger = document.getElementById('hamburger');
 const menu = document.getElementById('menu');
@@ -48,48 +48,9 @@ menuItems.forEach(item => {
         menu.classList.remove('active');
     });
 });
-*/
 
-function toggleMenu() {
-    const menu = document.querySelector('.menuFilho');
-    menu.classList.toggle('active');
-}
 
-let lastScrollTop = 0;
-window.addEventListener('scroll', function() {
-    const menuPai = document.querySelector('.menuPai');
-    let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-    if (scrollTop > lastScrollTop) {
-        // Scrolling down
-        menuPai.style.top = "-100px";
-    } else {
-        // Scrolling up
-        menuPai.style.top = "0";
-    }
-    lastScrollTop = scrollTop;
-});
 
-window.addEventListener('click', function(event) {
-    const menu = document.querySelector('.menuFilho');
-    const menuHamburguer = document.querySelector('.menuHamburguer');
-    if (!menu.contains(event.target) && !menuHamburguer.contains(event.target)) {
-        menu.classList.remove('active');
-    }
-});
-
-// Função para fechar o menu quando a página é rolada
-function closeMenuOnScroll() {
-    var menu = document.getElementById('menuFilho');
-
-    // Verifica se o menu está aberto
-    if (menu.classList.contains('active')) {
-        // Fecha o menu
-        menu.classList.remove('active');
-    }
-}
-
-// Adiciona um event listener para escutar por rolagens na página
-window.addEventListener('scroll', closeMenuOnScroll);
 
 function inicio() {
     var click = document.getElementById('#inicio')

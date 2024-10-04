@@ -123,10 +123,11 @@ body {
     .nav {
         display: none;
         position: absolute;
-        top: 160px; /* Ajuste conforme necessário para alinhar corretamente */
+        top: -260px; /* Ajuste conforme necessário para alinhar corretamente */
         right: 0;
         background-color: rgba(0, 0, 0, 0.9); /* Fundo escuro com opacidade */
         flex-direction: column;
+        max-width: 768px;
         width: 100%;
         text-align: center;
         gap: 1.8rem;
@@ -138,11 +139,21 @@ body {
     }
 
     .cta {
-        width: 150px;
+        width: 250px;
     }
     header {
         max-width: 768px;
         width: 100%;
+    }
+    .hero-container {
+        max-width: 768px;
+        width: 100%;
+        flex-direction: column;
+        .cta {
+            width: 250px;
+            font-size: 15px;
+        }
+
     }
 }
 

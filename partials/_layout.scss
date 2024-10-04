@@ -580,5 +580,38 @@
         opacity: 1;
     }
 }
+@media screen and (max-width: 450px) {
+    .btn-whatsapp{
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        z-index: 99;
+        cursor: pointer;
+        img {
+            max-width: 74px;
+            transition: 0.4s;
+            animation: zoomImage 2s infinite;
+        }
+        img:hover {
+            transform: scale(1.1);
+        }
+        .tooltip-text{
+            visibility: hidden;
+            position: absolute;
+            width: 120px;
+            top: 8px;
+            left: -244px;
+            padding: 6px;
+            border-radius: 8px;
+            text-align: center;
+            opacity: 0;
+            transition: opacity 0.4s;
+        }
+        .btn-whatsapp:hover .tooltip-text{
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+}
  
 

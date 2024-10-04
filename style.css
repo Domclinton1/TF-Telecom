@@ -120,10 +120,11 @@ body {
   .nav {
     display: none;
     position: absolute;
-    top: 160px; /* Ajuste conforme necessário para alinhar corretamente */
+    top: -260px; /* Ajuste conforme necessário para alinhar corretamente */
     right: 0;
     background-color: rgba(0, 0, 0, 0.9); /* Fundo escuro com opacidade */
     flex-direction: column;
+    max-width: 768px;
     width: 100%;
     text-align: center;
     gap: 1.8rem;
@@ -133,11 +134,20 @@ body {
     display: flex; /* Exibe o menu quando ativo */
   }
   .cta {
-    width: 150px;
+    width: 250px;
   }
   header {
     max-width: 768px;
     width: 100%;
+  }
+  .hero-container {
+    max-width: 768px;
+    width: 100%;
+    flex-direction: column;
+  }
+  .hero-container .cta {
+    width: 250px;
+    font-size: 15px;
   }
 }
 @media screen and (max-width: 450px) {
@@ -720,6 +730,39 @@ body {
   opacity: 1;
 }
 
+@media screen and (max-width: 450px) {
+  .btn-whatsapp {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 99;
+    cursor: pointer;
+  }
+  .btn-whatsapp img {
+    max-width: 74px;
+    transition: 0.4s;
+    animation: zoomImage 2s infinite;
+  }
+  .btn-whatsapp img:hover {
+    transform: scale(1.1);
+  }
+  .btn-whatsapp .tooltip-text {
+    visibility: hidden;
+    position: absolute;
+    width: 120px;
+    top: 8px;
+    left: -244px;
+    padding: 6px;
+    border-radius: 8px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.4s;
+  }
+  .btn-whatsapp .btn-whatsapp:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+  }
+}
 footer {
   background-color: #393A3C;
   color: #D4A157;
