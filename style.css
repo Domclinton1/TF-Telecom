@@ -138,6 +138,7 @@ body {
   }
   header {
     max-width: 768px;
+    min-width: 450px;
     width: 100%;
   }
   .hero-container {

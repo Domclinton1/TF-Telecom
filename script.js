@@ -111,3 +111,11 @@ function contato(){
     var click = document.getElementById('#contato')
     window.location.href = '#contato'
 }
+function wpp() {
+    var click = document.querySelectorAll('.cta')
+    window.open("https://wa.me/5531997715545?text=Ola,%20quero%20fazer%20um%20orçamento%20sobre um projeto...")
+}
+function wpp2() {
+    var click = document.querySelectorAll('.cta')
+    window.open("https://wa.me/5531992616974?text=Ola,%20quero%20fazer%20um%20orçamento%20sobre um projeto...")
+}
