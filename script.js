@@ -91,6 +91,26 @@ function closeMenuOnScroll() {
 // Adiciona um event listener para escutar por rolagens na página
 window.addEventListener('scroll', closeMenuOnScroll);
 
+//adciona slide as imagens
+let currentIndex = 0;
+const slides = document.querySelector('.slides');
+const totalSlides = document.querySelectorAll('.slide').length;
+
+function showNextSlide() {
+    currentIndex++;
+    if (currentIndex >= totalSlides) {
+        currentIndex = 0;
+    }
+    const offset = -currentIndex * 100;
+    slides.style.transform = `translateX(${offset}%)`;
+}
+
+// Muda a imagem a cada 3 segundos
+setInterval(showNextSlide, 3000);
+
+
+
+
 function inicio() {
     var click = document.getElementById('#inicio')
     window.location.href = '#inicio'
