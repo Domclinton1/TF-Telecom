@@ -1,4 +1,3 @@
-
 function toggleMenu() {
     const menu = document.querySelector('.menuFilho');
     menu.classList.toggle('active');
@@ -9,10 +8,8 @@ window.addEventListener('scroll', function() {
     const menuPai = document.querySelector('.menuPai');
     let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
     if (scrollTop > lastScrollTop) {
-        // Scrolling down
         menuPai.style.top = "-100px";
     } else {
-        // Scrolling up
         menuPai.style.top = "0";
     }
     lastScrollTop = scrollTop;
@@ -20,7 +17,7 @@ window.addEventListener('scroll', function() {
 
 window.addEventListener('click', function(event) {
     const menu = document.querySelector('.menuFilho');
-    const menuHamburguer = document.querySelector('.menuHamburger');
+    const menuHamburguer = document.querySelector('.hamburger');
     if (!menu.contains(event.target) && !menuHamburguer.contains(event.target)) {
         menu.classList.remove('active');
     }
@@ -39,6 +36,7 @@ function closeMenuOnScroll() {
 
 // Adiciona um event listener para escutar por rolagens na página
 window.addEventListener('scroll', closeMenuOnScroll);
+
 
 
 //adciona slide as imagens
