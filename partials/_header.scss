@@ -122,54 +122,56 @@ body {
 
 
 @media screen and (max-width: 450px) {
-    header{
-        max-width: 450px;
-        width: 100%;
-    }
-    .header {
+    .menuPai {
+        background-color: $logo-color-2;
         display: flex;
         justify-content: space-between;
+        color: #ffffff;
         align-items: center;
-        padding: 10px 20px;
-        position: relative;
-        max-width: 450px;
+        text-align: center;
+        font-weight: 600;
+        font-size: 18px;
         width: 100%;
-    }
-    .logo img {
-        width: 75px;
-    }
-    .nav {
-        display: none; /* Esconde o menu inicialmente no modo responsivo */
-        flex-direction: column;
-        position: absolute;
-        top: 100%;
-        right: 0;
-        
-        width: 100%;
-        text-align: right;
-        padding: 10px 20px;
-    }
-    .nav.active {
-        display: flex; /* Exibe o menu ao clicar no hambúrguer */
-    }
-    .cta {
-        width: 200px;
-        height: 25px;
-        
-    }
-    .hamburger {
-        display: block; /* Exibe o ícone do menu hambúrguer em telas pequenas */
-        cursor: pointer;
-        
-    }
-    .hamburger span {
-        display: block;
-        width: 25px;
-        height: 3px;
-        background-color: #D4A157;
-        margin: 5px 0;
-        transition: all 0.3s ease;
+        height: 100px;
+        top: 0;
+        z-index: 2;
+        transition: top 0.3s;
+        position: fixed;
     }
     
-  
+    .hamburger { /* Corrigido o nome da classe */
+        display: block; /* Agora o ícone será exibido */
+        font-size: 30px;
+        margin-right: 20px;
+        cursor: pointer;
+       
+    }
+    
+    .menuFilho {
+        display: none; /* Inicialmente oculto */
+        justify-content: flex-end;
+        height: 80px;
+        z-index: 1;
+    }
+    
+    .menuFilho.active {
+        display: flex; /* Exibe o menu ao clicar */
+        position: absolute;
+        top: 100px; /* Para que apareça abaixo do header */
+        right: 0;
+        background-color: #06121e;
+        width: 100%;
+        flex-direction: column;
+        text-align: right;
+    }
+    
+    .menuLista {
+        display: flex;
+        flex-direction: column; /* Alinha verticalmente */
+        list-style: none;
+        gap: 1.8rem;
+        align-items: flex-end;
+        margin: 30px;    
+        cursor: pointer;
+    }
 }

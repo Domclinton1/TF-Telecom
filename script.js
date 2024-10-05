@@ -50,8 +50,9 @@ menuItems.forEach(item => {
 });
 */
 
+// Função para abrir e fechar o menu ao clicar no hambúrguer
 function toggleMenu() {
-    const menu = document.querySelector('#menuFilho');
+    const menu = document.querySelector('.menuFilho');
     menu.classList.toggle('active');
 }
 
@@ -61,7 +62,7 @@ window.addEventListener('scroll', function() {
     let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
     if (scrollTop > lastScrollTop) {
         // Scrolling down
-        menuPai.style.top = "-170px";
+        menuPai.style.top = "-100px";
     } else {
         // Scrolling up
         menuPai.style.top = "0";
@@ -69,22 +70,28 @@ window.addEventListener('scroll', function() {
     lastScrollTop = scrollTop;
 });
 
-// Fecha o menu ao clicar fora dele
 window.addEventListener('click', function(event) {
-    const menu = document.querySelector('#menuFilho');
-    const menuHamburger = document.querySelector('#menuHamburger');
-    if (!menu.contains(event.target) && !menuHamburger.contains(event.target)) {
+    const menu = document.querySelector('.menuFilho');
+    const menuHamburguer = document.querySelector('.menuHamburguer');
+    if (!menu.contains(event.target) && !menuHamburguer.contains(event.target)) {
         menu.classList.remove('active');
     }
 });
 
-// Fecha o menu ao rolar a página
-window.addEventListener('scroll', function() {
-    const menu = document.querySelector('#menuFilho');
+// Função para fechar o menu quando a página é rolada
+function closeMenuOnScroll() {
+    var menu = document.getElementById('menuFilho');
+
+    // Verifica se o menu está aberto
     if (menu.classList.contains('active')) {
+        // Fecha o menu
         menu.classList.remove('active');
     }
-});
+}
+
+// Adiciona um event listener para escutar por rolagens na página
+window.addEventListener('scroll', closeMenuOnScroll);
+
 
 //adciona slide as imagens
 let currentIndex = 0;
