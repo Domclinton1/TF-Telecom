@@ -11,14 +11,14 @@
     position: fixed;
     top: 0;
     transition: top 0.3s ease-in-out; /* Adiciona suavidade ao mostrar/esconder o menu */
-
+    
     .logo {
         img {
             width: 150px;
         }
     }
 
-    .nav {
+    .menuLista{
         display: flex;
         gap: 1.8rem;
         li {
@@ -43,22 +43,21 @@
     }
 
     .hamburger {
+        
         display: none;
-        flex-direction: column;
+        font-size: 30px;
+        margin-right: 20px;
         cursor: pointer;
-        gap: 5px;
     }
+    
 
-    .hamburger span {
-        width: 25px;
-        height: 3px;
-        background-color: #333;
-    }
+    
+       
 }
 
 /* Corrige o problema de sobreposição adicionando espaçamento no topo do body */
 body {
-    padding-top: 80px; /* Ajuste este valor de acordo com a altura do seu menu */
+  padding-top: 80px; /* Ajuste este valor de acordo com a altura do seu menu */
 }
 
 .hero-container {
@@ -144,9 +143,12 @@ body {
         font-size: 30px;
         margin-right: 20px;
         cursor: pointer;
+        z-index: 99;
        
     }
-    
+    .menu-toggle {
+        display: flex;
+    }
     .menuFilho {
         display: none; /* Inicialmente oculto */
         justify-content: flex-end;
@@ -155,23 +157,21 @@ body {
     }
     
     .menuFilho.active {
-        display: flex; /* Exibe o menu ao clicar */
+        display: flex;
+        flex-direction: column;
         position: absolute;
-        top: 100px; /* Para que apareça abaixo do header */
-        right: 0;
+        top:270px;
+        left: 0;
         background-color: #06121e;
         width: 100%;
-        flex-direction: column;
-        text-align: right;
+        padding: 20px 0;
+        z-index: 99;
     }
     
     .menuLista {
-        display: flex;
-        flex-direction: column; /* Alinha verticalmente */
-        list-style: none;
-        gap: 1.8rem;
-        align-items: flex-end;
-        margin: 30px;    
-        cursor: pointer;
+        flex-direction: column;
+        gap: 1rem;
+        margin: 0;
+        background-color: $logo-color-1;
     }
 }
