@@ -23,7 +23,7 @@
 
 
         .info-service {
-            text-align: center;
+            text-align: justify;
             gap: 1.8rem;
             display: flex;
             flex-direction: column;
@@ -32,15 +32,17 @@
             justify-content: center;
             align-items: center;
             
+            
 
             h2 {
                 font-size: 20px;
             }
             
+            
             .cta {
                 background: linear-gradient(90deg, #D4A157, #A56B2B);
                 width: 220px;
-                height: 25px;
+                height: 50px;
                 color: $logo-color-2;
                 display: flex;
                 align-items: center;
@@ -56,6 +58,7 @@
             .cta:hover {
                 border: 1px solid gold;
                 transform: scale(1.08);
+                color: #ffffff;
             }
         }
         .img {
@@ -71,11 +74,11 @@
         
     }
     .service-text {
-        padding: 0 40px 0 40px;
+        padding: 0 40px 0 40px ;
         display: flex;
         flex-direction: column;
         gap: 1.8rem;
-        width: 80%;
+        width: 100%;
         ul {
             line-height: 2;
             text-align: justify;
@@ -133,7 +136,7 @@
             gap: 1.8rem;
             background-color: $logo-color-2;
             width: 100%;
-            padding: 40px;
+            padding: 20px;
             color: $logo-color-1;
     
             .info-service {
@@ -143,6 +146,7 @@
                 flex-direction: column;
                 border: 1px solid ;
                 padding: 10px;
+                
             }
         }
         .service-info {
@@ -151,7 +155,7 @@
             
         }
         .service-text {
-            padding: 40px;
+            padding: 30px;
             display: flex;
             flex-direction: column;
             gap: 1.8rem;
@@ -163,7 +167,8 @@
             }
             p {
                 line-height: 2;
-                text-align: justify;        }
+                text-align: justify;
+            }
         }
         .slideshow-container {
             width: 100%;
@@ -190,7 +195,7 @@
 }
 @media screen and (min-width: 451px) and (max-width: 768px) {
     .services {
-        min-width: 450px;
+        min-width: 451px;
         max-width: 768px;
         width: 100%;
         justify-content: center;
@@ -211,7 +216,7 @@
          }
         .service-box {
             max-width: 768px;
-            min-width: 450px;
+            min-width: 451px;
             width: 100%;
             display: grid; /* Troca para grid */
             grid-template-columns: repeat(auto-fit, minmax(250px, 2fr)); /* Cria colunas automáticas */
@@ -239,21 +244,48 @@
     width: 100%;
     text-align: center;
     display: flex;
+    align-items: center;
     flex-direction: column;
+    gap: 1.8rem;
+    .cta {
+        background: linear-gradient(90deg, #D4A157, #A56B2B);
+        width: 220px;
+        height: 50px;
+        color: $logo-color-2;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        border-radius: 5px;
+        cursor: pointer;
+        display: flex;
+        gap: 1rem;
+        font-size: 18px;
+        transition: 1s ease-in-out;
+    }
+    .cta:hover {
+        color: #ffffff;
+    }
     h2 {
         margin: 40px;
     }
     .testimonials {
         display: flex;
         gap: 2rem;
+        align-items: center;
+       
     }
     .feedback{
         width: 100%;
+        height: 650px;
         padding: 10px;
         display: flex;
         flex-direction: column;
         gap: 2rem;
         border: 1px solid $logo-color-1;
+        em {
+            text-align: justify;
+        }
     }
     .feedback-content {
         display: flex;
@@ -279,7 +311,7 @@
 }
 @media screen and (max-width: 450px) {
     .prova-social {
-        padding: 40px;
+        padding: 20px;
         max-width: 450px;
         width: 100%;
         text-align: center;
@@ -292,6 +324,7 @@
             display: flex;
             flex-direction: column;
             gap: 2rem;
+           
         }
         .feedback{
             width: 100%;
@@ -329,7 +362,7 @@
         padding: 40px;
         width: 100%;
         max-width: 768px;
-        min-width: 450px;
+        min-width: 451px;
         text-align: center;
         display: flex;
         flex-direction: column;
@@ -343,7 +376,7 @@
             gap: 2rem;
             width: 100%;
             max-width: 768px;
-            min-width: 450px;
+            min-width: 451px;
         }
         .feedback{
             width: 100%;
@@ -381,6 +414,10 @@
     flex-direction: column;
     gap: 1.8rem;
     text-align: center;
+    h2, p {
+        padding: 40px 40px 0;
+        text-align: justify;
+    }
     .ul-beneficios {
         display: flex;
 
@@ -478,6 +515,7 @@
         width: 100%;
         justify-content: center;
         gap: 2rem;
+        align-items: center;
         .sobre-img {
             width: 100%;
             height: 500px;
@@ -489,8 +527,29 @@
             
         }
         .diferencial-lista {
-            padding-left: 40px;
+            padding: 20px;
             font-size: 15px;
+        }
+        .cta {
+            background: linear-gradient(90deg, #D4A157, #A56B2B);
+            width: 220px;
+            height: 50px;
+            color: $logo-color-2;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            border-radius: 5px;
+            cursor: pointer;
+            display: flex;
+            gap: 1rem;
+            font-size: 18px;
+            transition: 1s ease-in-out;
+        }
+        .cta:hover {
+            border: 1px solid gold;
+            transform: scale(1.08);
+            color: #ffffff;
         }
     }
 }
@@ -501,7 +560,7 @@
             margin: 20px auto;
         }
         p {
-            padding: 40px;
+            padding: 20px;
             text-align: justify;
         }
     }
@@ -511,7 +570,11 @@
         
         .diferencial-lista {
             padding: 40px;
+            .cta {
+                margin: 0 auto;
+            }
         }
+        
         .sobre-img {
             width: 100%;
             
@@ -523,7 +586,7 @@
 @media screen and (min-width:451px) and (max-width: 768px) {
     .sobre {
         max-width: 768px;
-        min-width: 450px;
+        min-width: 451px;
         width: 100%;
 
         h2 {
@@ -620,13 +683,13 @@
         display: flex;
         flex-direction: column;
         max-width: 768px;
-        min-width: 450px;
+        min-width: 451px;
         width: 100%;
     }
     .contatos {
         display: flex;
         max-width: 768px;
-        min-width: 450px;
+        min-width: 451px;
         width: 100%;
     }
 }
