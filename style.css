@@ -46,6 +46,7 @@
   font-size: 18px;
 }
 .header .hamburger {
+  display: none;
   font-size: 30px;
   margin-right: 20px;
   cursor: pointer;
@@ -128,8 +129,8 @@ body {
     transition: top 0.3s;
     position: fixed;
   }
-  .hamburger { /* Corrigido o nome da classe */
-    display: block; /* Agora o ícone será exibido */
+  .hamburger {
+    display: block !important; /* Garante que o ícone seja exibido */
     font-size: 30px;
     margin-right: 20px;
     cursor: pointer;

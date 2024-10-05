@@ -44,7 +44,7 @@
 
     .hamburger {
         
-        
+        display: none;
         font-size: 30px;
         margin-right: 20px;
         cursor: pointer;
@@ -138,13 +138,12 @@ body {
         position: fixed;
     }
     
-    .hamburger { /* Corrigido o nome da classe */
-        display: block; /* Agora o ícone será exibido */
+    .hamburger {
+        display: block !important; /* Garante que o ícone seja exibido */
         font-size: 30px;
         margin-right: 20px;
         cursor: pointer;
         z-index: 99;
-       
     }
     .menu-toggle {
         display: flex;

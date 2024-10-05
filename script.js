@@ -8,7 +8,7 @@ window.addEventListener('scroll', function() {
     const menuPai = document.querySelector('.menuPai');
     let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
     if (scrollTop > lastScrollTop) {
-        menuPai.style.top = "-100px";
+        menuPai.style.top = "-170px";
     } else {
         menuPai.style.top = "0";
     }
