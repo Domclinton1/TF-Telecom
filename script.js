@@ -91,3 +91,11 @@ function email(){
     var click = document.querySelectorAll('email')
     window.location.href = 'mailto:fctelecom24@gmail.com';
 }
+function face() {
+    var click = document.querySelectorAll('face')
+    window.open("https://www.facebook.com/profile.php?id=61567112390613")
+}
+function insta(){
+    var click = document.querySelectorAll('insta')
+    window.open("https://www.instagram.com/tftelecom_ltda/")
+}
