@@ -48,6 +48,26 @@
 
     gtag('config', 'AW-16730281583');
     </script>
+
+    <!-- Event snippet for Page view conversion page
+    In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+    <script>
+    function gtag_report_conversion(url) {
+      var callback = function () {
+        if (typeof(url) != 'undefined') {
+          window.location = url;
+        }
+      };
+      gtag('event', 'conversion', {
+          'send_to': 'AW-16730281583/qq9cCM75wdoZEO-sz6k-',
+          'value': 1.0,
+          'currency': 'BRL',
+          'event_callback': callback
+      });
+      return false;
+    }
+    </script>
+    
     
 </head>
 <body>
@@ -66,7 +86,7 @@
                 <li onclick="clientes()">Clientes</li>
                 <li onclick="sobre()">Sobre Nós</li>
                 <li onclick="contato()">Contato</li>
-                <div class="cta" onclick="wpp()">Entre em Contato <i class="fa-brands fa-whatsapp"></i></div>
+                <div class="cta" onclick="wpp(), gtag_report_conversion('https://wa.me/5531997715545')">Entre em Contato <i class="fa-brands fa-whatsapp"></i></div>
             </ul>
             </nav>
         </div>
@@ -81,7 +101,7 @@
             <div class="hero-text">
                 <h1>Soluções de Telecomunicações Inovadoras e Eficientes para Conectar seu Negócio</h1>
                 <h2>Instalação de banda larga, VoIP, manutenção de redes CTOs e backbone com expertise e qualidade garantidas</h2>
-                <div class="cta" onclick="wpp2()">
+                <div class="cta" onclick="wpp2(), gtag_report_conversion('https://wa.me/5531997715545')">
                     Solicite Orçamento <i class="fa-brands fa-whatsapp"></i>
                 </div>
             </div>
@@ -117,7 +137,7 @@
                         <h2>Instalação de Banda Larga e VoIP</h2>
                         <P>Implementamos soluções de internet banda larga e sistemas de telefonia VoIP com a mais alta eficiência para empresas de todos os tamanhos.</P>
                     </div>
-                    <div class="cta" onclick="wpp()">
+                    <div class="cta" onclick="wpp(), gtag_report_conversion('https://wa.me/5531997715545')">
                         Solicite Orçamento <i class="fa-brands fa-whatsapp"></i>
                     </div>
                 </div>
@@ -131,7 +151,7 @@
                         Garantimos a estabilidade e a performance das suas redes com manutenção especializada em CTOs e backbones.
                     </p>
                     </div>
-                    <div class="cta" onclick="wpp2()">
+                    <div class="cta" onclick="wpp2(), gtag_report_conversion('https://wa.me/5531992616974')">
                         Solicite Orçamento <i class="fa-brands fa-whatsapp"></i>
                     </div>
                 </div>
@@ -145,7 +165,7 @@
                         Organize e mantenha seus equipamentos de rede em perfeita ordem com nossa montagem de racks profissionais.
                     </p>
                     </div>
-                    <div class="cta" onclick="wpp()">
+                    <div class="cta" onclick="wpp(), gtag_report_conversion('https://wa.me/5531997715545')">
                         Solicite Orçamento <i class="fa-brands fa-whatsapp"></i>
                     </div>
                 </div>
@@ -159,7 +179,7 @@
                             Implementamos infraestruturas de rede robustas e seguras, preparadas para lidar com a demanda crescente de dados da sua empresa.
                         </p>
                     </div>
-                    <div class="cta" onclick="wpp2()">
+                    <div class="cta" onclick="wpp2(), gtag_report_conversion('https://wa.me/5531992616974')">
                         Solicite Orçamento <i class="fa-brands fa-whatsapp"></i>
                     </div>
                 </div>
@@ -263,7 +283,7 @@
                     </div>
                 </div>
             </div>
-            <div class="cta" onclick="wpp()">Entre em Contato <i class="fa-brands fa-whatsapp"></i></div>
+            <div class="cta" onclick="wpp(), gtag_report_conversion('https://wa.me/5531997715545')">Entre em Contato <i class="fa-brands fa-whatsapp"></i></div>
         </section>
         <section class="beneficios">
             <h2>Por Que Escolher Nossa Empresa?</h2>
@@ -306,7 +326,7 @@
                     
                     
                     <li data-aos="fade-down" data-aos-duration="1700">Clientes em toda Minas Gerais. <i class="fa fa-check"></i></li>
-                    <div class="cta" onclick="wpp()">Entre em Contato <i class="fa-brands fa-whatsapp"></i></div>
+                    <div class="cta" onclick="wpp(), gtag_report_conversion('https://wa.me/5531997715545')">Entre em Contato <i class="fa-brands fa-whatsapp"></i></div>
                 </ul>
                 
                 <div class="sobre-img">
@@ -323,14 +343,14 @@
             <h2>Entre em Contato</h2>
            <div class="contatos">
             <ul class="contato-lista">
-                <li onclick="wpp()">WhatsApp <i class="fa-brands fa-whatsapp "></i></li>
-                <li onclick="wpp2()">Telefone <i class="fa fa-phone"></i></li>
+                <li onclick="wpp(), gtag_report_conversion('https://wa.me/5531997715545')">WhatsApp <i class="fa-brands fa-whatsapp "></i></li>
+                <li onclick="wpp2(), gtag_report_conversion('https://wa.me/5531992616974')">Telefone <i class="fa fa-phone"></i></li>
                 <li onclick="email()">Email <i class="fa fa-envelope"></i></li>
             </ul>
             <ul class="contato-lista">
                 <li onclick="insta()">Instagram <i class="fa-brands fa-instagram"></i></li>
                 <li onclick="face()">Facebook <i class="fa-brands fa-facebook"></i></li>
-                <li onclick="wpp2()">WhatsApp <i class="fa-brands fa-whatsapp"></i></li>
+                <li onclick="wpp(), gtag_report_conversion('https://wa.me/5531997715545')">WhatsApp <i class="fa-brands fa-whatsapp"></i></li>
             </ul>
            </div>
         </section>
@@ -352,7 +372,7 @@
         </div>
         
     </footer>
-    <a onclick="wpp()" class="btn-whatsapp" target="_blank" data-aos="zoom-in-up" data-aos-delay="400">
+    <a onclick="wpp(), gtag_report_conversion('https://wa.me/5531997715545')" class="btn-whatsapp" target="_blank" data-aos="zoom-in-up" data-aos-delay="400">
         <img  src="./assets/icons/whatssapp.svg" alt="Botão whatsapp">
         <span class="tooltip-text">Agende seu orçamento.</span>
     </a>
