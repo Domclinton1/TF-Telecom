@@ -5,7 +5,7 @@
     text-align: center;
     padding: 10px 20px 0 0;
     color: $logo-color-1;
-    background-color: $logo-color-2;
+    background-color: #ffffff;
     width: 100%;
     z-index: 100;
     position: fixed;
@@ -21,6 +21,7 @@
     .menuLista{
         display: flex;
         gap: 1.8rem;
+        align-items: center;
         li {
             list-style: none;
             cursor: pointer;
@@ -28,10 +29,11 @@
     }
 
     .cta {
-        background: linear-gradient(90deg, #D4A157, #A56B2B);
+        //background: linear-gradient(90deg, #D4A157, #A56B2B);
+        background-color: rgb(78, 235, 78);
         width: 200px;
-        height: 25px;
-        color: $logo-color-2;
+        height: 35px;
+        color: #ffffff;
         display: flex;
         align-items: center;
         text-align: center;
@@ -40,6 +42,9 @@
         cursor: pointer;
         gap: 1rem;
         font-size: 18px;
+    }
+    .cta:hover {
+        color: $logo-color-1;
     }
 
     .hamburger {
@@ -80,10 +85,11 @@ body {
     }
 
     .cta {
-        background: linear-gradient(90deg, #D4A157, #A56B2B);
+        //background: linear-gradient(90deg, #D4A157, #A56B2B);
+        background-color: rgb(78, 235, 78);
         width: 220px;
         height: 50px;
-        color: $logo-color-2;
+        color: #ffffff;
         display: flex;
         align-items: center;
         text-align: center;
@@ -96,7 +102,7 @@ body {
         transition: 1s ease-in-out;
     }
     .cta:hover {
-        color: #ffffff;
+        color: $logo-color-1;
     }
     .logo-hero {
         width: 50%;

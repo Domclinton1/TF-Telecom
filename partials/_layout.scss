@@ -40,10 +40,11 @@
             
             
             .cta {
-                background: linear-gradient(90deg, #D4A157, #A56B2B);
+                //background: linear-gradient(90deg, #D4A157, #A56B2B);
+                background-color: green;
                 width: 220px;
                 height: 50px;
-                color: $logo-color-2;
+                color: #ffff;
                 display: flex;
                 align-items: center;
                 text-align: center;
@@ -248,10 +249,11 @@
     flex-direction: column;
     gap: 1.8rem;
     .cta {
-        background: linear-gradient(90deg, #D4A157, #A56B2B);
+        //background: linear-gradient(90deg, #D4A157, #A56B2B);
+        background-color: rgb(78, 235, 78);
         width: 220px;
         height: 50px;
-        color: $logo-color-2;
+        color: #ffffff;
         display: flex;
         align-items: center;
         text-align: center;
@@ -531,10 +533,11 @@
             font-size: 15px;
         }
         .cta {
-            background: linear-gradient(90deg, #D4A157, #A56B2B);
+            //background: linear-gradient(90deg, #D4A157, #A56B2B);
+            background-color: rgb(78, 235, 78);
             width: 220px;
             height: 50px;
-            color: $logo-color-2;
+            color: #ffffff;
             display: flex;
             align-items: center;
             text-align: center;

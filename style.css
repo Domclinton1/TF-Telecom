@@ -13,7 +13,7 @@
   text-align: center;
   padding: 10px 20px 0 0;
   color: #D4A157;
-  background-color: #393A3C;
+  background-color: #ffffff;
   width: 100%;
   z-index: 100;
   position: fixed;
@@ -26,16 +26,17 @@
 .header .menuLista {
   display: flex;
   gap: 1.8rem;
+  align-items: center;
 }
 .header .menuLista li {
   list-style: none;
   cursor: pointer;
 }
 .header .cta {
-  background: linear-gradient(90deg, #D4A157, #A56B2B);
+  background-color: rgb(78, 235, 78);
   width: 200px;
-  height: 25px;
-  color: #393A3C;
+  height: 35px;
+  color: #ffffff;
   display: flex;
   align-items: center;
   text-align: center;
@@ -44,6 +45,9 @@
   cursor: pointer;
   gap: 1rem;
   font-size: 18px;
+}
+.header .cta:hover {
+  color: #D4A157;
 }
 .header .hamburger {
   display: none;
@@ -76,10 +80,10 @@ body {
   text-align: justify;
 }
 .hero-container .cta {
-  background: linear-gradient(90deg, #D4A157, #A56B2B);
+  background-color: rgb(78, 235, 78);
   width: 220px;
   height: 50px;
-  color: #393A3C;
+  color: #ffffff;
   display: flex;
   align-items: center;
   text-align: center;
@@ -92,7 +96,7 @@ body {
   transition: 1s ease-in-out;
 }
 .hero-container .cta:hover {
-  color: #ffffff;
+  color: #D4A157;
 }
 .hero-container .logo-hero {
   width: 50%;
@@ -202,10 +206,10 @@ body {
   font-size: 20px;
 }
 .services .service-box .info-service .cta {
-  background: linear-gradient(90deg, #D4A157, #A56B2B);
+  background-color: green;
   width: 220px;
   height: 50px;
-  color: #393A3C;
+  color: white;
   display: flex;
   align-items: center;
   text-align: center;
@@ -395,10 +399,10 @@ body {
   gap: 1.8rem;
 }
 .prova-social .cta {
-  background: linear-gradient(90deg, #D4A157, #A56B2B);
+  background-color: rgb(78, 235, 78);
   width: 220px;
   height: 50px;
-  color: #393A3C;
+  color: #ffffff;
   display: flex;
   align-items: center;
   text-align: center;
@@ -660,10 +664,10 @@ body {
   font-size: 15px;
 }
 .sobre .sobre-content .cta {
-  background: linear-gradient(90deg, #D4A157, #A56B2B);
+  background-color: rgb(78, 235, 78);
   width: 220px;
   height: 50px;
-  color: #393A3C;
+  color: #ffffff;
   display: flex;
   align-items: center;
   text-align: center;
