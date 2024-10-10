@@ -33,7 +33,7 @@
   cursor: pointer;
 }
 .header .cta {
-  background-color: rgb(78, 235, 78);
+  background-color: #01a884;
   width: 200px;
   height: 35px;
   color: #ffffff;
@@ -80,7 +80,7 @@ body {
   text-align: justify;
 }
 .hero-container .cta {
-  background-color: rgb(78, 235, 78);
+  background-color: #01a884;
   width: 220px;
   height: 50px;
   color: #ffffff;
@@ -206,7 +206,7 @@ body {
   font-size: 20px;
 }
 .services .service-box .info-service .cta {
-  background-color: green;
+  background-color: #01a884;
   width: 220px;
   height: 50px;
   color: white;
@@ -399,7 +399,7 @@ body {
   gap: 1.8rem;
 }
 .prova-social .cta {
-  background-color: rgb(78, 235, 78);
+  background-color: #01a884;
   width: 220px;
   height: 50px;
   color: #ffffff;
@@ -664,7 +664,7 @@ body {
   font-size: 15px;
 }
 .sobre .sobre-content .cta {
-  background-color: rgb(78, 235, 78);
+  background-color: #01a884;
   width: 220px;
   height: 50px;
   color: #ffffff;
