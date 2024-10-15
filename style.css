@@ -118,7 +118,7 @@ body {
 
 @media screen and (max-width: 450px) {
   .menuPai {
-    background-color: #393A3C;
+    background-color: #ffffff;
     display: flex;
     justify-content: space-between;
     color: #D4A157;
@@ -155,7 +155,7 @@ body {
     position: absolute;
     top: 320px;
     left: 0;
-    background-color: #393A3C;
+    background-color: #ffffff;
     width: 100%;
     padding: 20px 0;
     z-index: 99;
@@ -164,7 +164,7 @@ body {
     flex-direction: column;
     gap: 1rem;
     margin: 0;
-    background-color: #393A3C;
+    background-color: white;
   }
   .cta {
     margin: 0 auto;
