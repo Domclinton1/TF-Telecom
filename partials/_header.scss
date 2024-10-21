@@ -127,6 +127,12 @@ body {
 
 
 @media screen and (max-width: 450px) {
+    header {
+        width: 100%;
+        max-width: 450px;
+        height: 100%;
+        padding: 10px;
+    }
     .menuPai {
         background-color: #ffffff;
         display: flex;
@@ -182,5 +188,22 @@ body {
     .cta {
         margin: 0 auto;
 
+    }
+    .hero-container {
+        width: 100%;
+        max-width: 450px;
+        text-align: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        .logo-hero {
+            display: none;
+        }
+        h1 {
+            font-size: 20px;
+        }
+        h2 {
+            font-size: 18px;
+        }
     }
 }
