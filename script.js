@@ -71,9 +71,9 @@ function sobre(){
     var lick = document.getElementById('#sobre')
     window.location.href = '#sobre'
 }
-function clientes(){
-    var click = document.getElementById('#clientes')
-    window.location.href = '#clientes'
+function fiber(){
+    var click = document.getElementById('#fiber')
+    window.location.href = '#fiber'
 }
 function contato(){
     var click = document.getElementById('#contato')
