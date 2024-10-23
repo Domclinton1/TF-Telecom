@@ -71,10 +71,7 @@ function sobre(){
     var lick = document.getElementById('#sobre')
     window.location.href = '#sobre'
 }
-function fiber(){
-    var click = document.getElementById('#fiber')
-    window.location.href = '#fiber'
-}
+
 function contato(){
     var click = document.getElementById('#contato')
     window.location.href = '#contato'
@@ -83,26 +80,7 @@ function wpp() {
     var click = document.querySelectorAll('.cta')
     window.open("https://wa.me/5531997715545?text=Ola,%20quero%20fazer%20um%20orçamento%20sobre um projeto...")
 }
-function plano1() {
-    var click = document.querySelectorAll('.cta')
-    window.open("https://wa.me/5531997715545?text=Ola,%20quero%20contratar%20o%20plano%20de%20internet%20de 420 MEGA...")
-}
-function plano2() {
-    var click = document.querySelectorAll('.cta')
-    window.open("https://wa.me/5531997715545?text=Ola,%20quero%20contratar%20o%20plano%20de%20internet%20de 750 MEGA...")
-}
-function plano3() {
-    var click = document.querySelectorAll('.cta')
-    window.open("https://wa.me/5531997715545?text=Ola,%20quero%20contratar%20o%20plano%20de%20internet%20de 780 MEGA...")
-}
-function plano4() {
-    var click = document.querySelectorAll('.cta')
-    window.open("https://wa.me/5531997715545?text=Ola,%20quero%20contratar%20o%20plano%20de%20internet%20de 850 MEGA...")
-}
-function plano5() {
-    var click = document.querySelectorAll('.cta')
-    window.open("https://wa.me/5531997715545?text=Ola,%20quero%20contratar%20o%20plano%20de%20internet%20de 1 GIGA...")
-}
+
 function wpp2() {
     var click = document.querySelectorAll('.cta')
     window.open("https://wa.me/5531992616974?text=Ola,%20quero%20fazer%20um%20orçamento%20sobre um projeto...")

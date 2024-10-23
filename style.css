@@ -192,178 +192,6 @@ body {
     font-size: 18px;
   }
 }
-.internet-planos h2, .internet-planos h3 {
-  align-items: center;
-  text-align: center;
-  line-height: 2;
-}
-.internet-planos .planos-content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 40px;
-  gap: 1.8rem;
-}
-.internet-planos .planos-content .plano-net:first-child {
-  height: 92.5vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  gap: 1.8rem;
-}
-.internet-planos .planos-content .plano-net:first-child p {
-  font-size: 20px;
-  font-weight: 700;
-}
-.internet-planos .planos-content .plano-net {
-  box-shadow: #1d1d1d 1px 1px 10px;
-  border-radius: 5px;
-  width: 100%;
-}
-.internet-planos .planos-content .plano-net p {
-  font-weight: 700;
-}
-.internet-planos .planos-content .plano-net h2 {
-  margin: 12px auto;
-}
-.internet-planos .planos-content .plano-net .cta {
-  background-color: #01a884;
-  width: 100%;
-  height: 35px;
-  color: #ffffff;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  justify-content: center;
-  border-radius: 5px;
-  cursor: pointer;
-  gap: 1rem;
-  font-size: 18px;
-}
-.internet-planos .planos-content .plano-net .cta:hover {
-  color: #D4A157;
-}
-.internet-planos .planos-content .plano-net span {
-  height: 20px;
-}
-.internet-planos .planos-content .plano-net span img {
-  width: 50%;
-  height: 80px;
-}
-
-@media screen and (max-width: 450px) {
-  .internet-planos {
-    width: 100%;
-    max-width: 450px;
-  }
-  .internet-planos h2, .internet-planos h3 {
-    padding: 40px 0 10px 10px;
-  }
-  .internet-planos .planos-content {
-    display: flex;
-    flex-direction: column;
-  }
-}
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 99;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-.modal .modalContent {
-  background-color: #ffffff;
-  box-shadow: rgba(0, 0, 0, 0.5) 10px 10px 20px;
-  margin: 15% auto;
-  padding: 20px;
-  width: 100%;
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-}
-.modal .modalContent .modalText {
-  width: 100%;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-  margin: 20px auto;
-  display: flex;
-  gap: 10px;
-}
-.modal .modalContent .modalText .megaplano {
-  box-shadow: #1d1d1d 1px 1px 10px;
-  border-radius: 5px;
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-}
-.modal .modalContent .modalText .megaplano p {
-  font-weight: 700;
-}
-.modal .modalContent .modalText .megaplano h2 {
-  margin: 12px auto;
-}
-.modal .modalContent .modalText .megaplano .cta {
-  background-color: #01a884;
-  width: 100%;
-  height: 35px;
-  color: #ffffff;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  justify-content: center;
-  border-radius: 5px;
-  cursor: pointer;
-  gap: 1rem;
-  font-size: 18px;
-}
-.modal .modalContent .modalText .megaplano .cta:hover {
-  color: #D4A157;
-}
-.modal .modalContent .modalText .megaplano span {
-  height: 20px;
-}
-.modal .modalContent .modalText .megaplano span img {
-  width: 100%;
-  height: 80px;
-}
-.modal .modalContent .modal button {
-  margin: 0 auto;
-  width: 50%;
-}
-.modal .modalContent .close {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-  display: flex;
-  justify-content: flex-end;
-}
-.modal .modalContent .close:hover,
-.modal .modalContent .close:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-@media screen and (max-width: 450px) {
-  .modal {
-    width: 100%;
-    max-width: 450px;
-  }
-  .modal .modalContent .modalText {
-    display: flex;
-    flex-direction: column;
-  }
-}
 .services {
   justify-content: center;
   align-items: center;
@@ -385,6 +213,7 @@ body {
   width: 100%;
   padding: 40px;
   color: #D4A157;
+  height: 100vh;
 }
 .services .service-box .info-service {
   text-align: justify;
@@ -392,8 +221,7 @@ body {
   display: flex;
   flex-direction: column;
   border: 1px solid;
-  padding: 10px;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 .services .service-box .info-service h2 {
@@ -401,14 +229,13 @@ body {
 }
 .services .service-box .info-service .cta {
   background-color: #01a884;
-  width: 220px;
+  width: 100%;
   height: 50px;
   color: white;
   display: flex;
   align-items: center;
   text-align: center;
   justify-content: center;
-  border-radius: 5px;
   cursor: pointer;
   display: flex;
   gap: 1rem;
