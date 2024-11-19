@@ -97,32 +97,3 @@ function insta(){
     var click = document.querySelectorAll('insta')
     window.open("https://www.instagram.com/tftelecom_ltda/")
 }
-
-document.addEventListener("DOMContentLoaded", function(){
-    const openModalButtons = document.querySelectorAll(".openModal");
-    const modals = document.querySelectorAll(".modal");
-    const closeButtons = document.querySelectorAll(".close");
-
-    openModalButtons.forEach(function(button){
-        button.addEventListener("click", function(){
-            const modalId = button.getAttribute("data-modal-id");
-            const modal = document.getElementById(modalId);
-            modal.style.display = "block";
-        });
-    });
-
-    closeButtons.forEach(function(button) {
-        button.addEventListener("click", function(){
-            const modal = button.closest(".modal");
-            modal.style.display = "none";
-        });
-    });
-
-    window.addEventListener("click", function(event) {
-        modals.forEach(function(modal) {
-            if (event.target === modal) {
-                modal.style.display = "none";
-            }
-        });
-    });
-});

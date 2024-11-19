@@ -13,7 +13,7 @@
   text-align: center;
   padding: 10px 20px 0 0;
   color: #D4A157;
-  background-color: #ffffff;
+  background: linear-gradient(90deg, #004aad, #0078ff);
   width: 100%;
   z-index: 100;
   position: fixed;
@@ -209,10 +209,10 @@ body {
 .services .service-box {
   display: flex;
   gap: 1.8rem;
-  background-color: #393A3C;
+  background: linear-gradient(90deg, #004aad, #0078ff);
   width: 100%;
   padding: 40px;
-  color: #D4A157;
+  color: #ffffff;
   height: 100vh;
 }
 .services .service-box .info-service {
@@ -647,7 +647,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 1.8rem;
-  background-color: #393A3C;
+  background: linear-gradient(90deg, #004aad, #0078ff);
   color: #D4A157;
 }
 .sobre h2 {
@@ -898,8 +898,8 @@ body {
   }
 }
 footer {
-  background-color: #ffffff;
-  color: #393A3C;
+  background: linear-gradient(90deg, #004aad, #0078ff);
+  color: #ffffff;
   padding: 40px;
   display: flex;
   justify-content: space-between;
