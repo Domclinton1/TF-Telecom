@@ -198,6 +198,10 @@ body {
     font-size: 18px;
   }
 }
+body {
+  background-color: #f5f5f5;
+}
+
 .services {
   justify-content: center;
   align-items: center;
