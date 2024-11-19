@@ -28,9 +28,15 @@
   gap: 1.8rem;
   align-items: center;
 }
-.header .menuLista li {
+.header .menuLista a {
   list-style: none;
   cursor: pointer;
+  text-decoration: none;
+  color: #D4A157;
+  transition: 0.5s;
+}
+.header .menuLista a:hover {
+  letter-spacing: 0.5rem;
 }
 .header .cta {
   background-color: #01a884;

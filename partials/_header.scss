@@ -22,9 +22,15 @@
         display: flex;
         gap: 1.8rem;
         align-items: center;
-        li {
+        a {
             list-style: none;
             cursor: pointer;
+            text-decoration: none;
+            color: $logo-color-1;
+            transition: 0.5s;
+        }
+        a:hover {
+            letter-spacing: 0.5rem;
         }
     }
 
